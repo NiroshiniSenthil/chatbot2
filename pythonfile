@@ -6,7 +6,7 @@ import base64
 import config
 from langchain.memory import ConversationBufferMemory
 if "THIRDAI_KEY" in os.environ:
-    licensing.activate(os.environ["THIRDAI_KEY"])
+    licensing.activate(os.environ["THIRDAI_KEY"]) #create a .env file
 else:
     licensing.activate(config.THIRDAI_KEY)
 
